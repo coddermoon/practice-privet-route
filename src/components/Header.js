@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { authContext } from '../contexts/UserContext';
+
 
 
 
 const Header = () => {
-  const {displayName} = useContext(authContext)
+
   
     return (
        <nav>
@@ -17,7 +17,7 @@ const Header = () => {
     <Link className="btn btn-ghost normal-case text-xl"  to='/register'>Signup</Link>
     <Link  className="btn btn-ghost normal-case text-xl" to='/login'>Login</Link>
   </div>
-  wellcome {displayName}
+  wellcome {'he'}
 </div>
        </nav>
     );

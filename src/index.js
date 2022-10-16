@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import UserContext from './contexts/UserContext';
+
 import reportWebVitals from './reportWebVitals';
 import router from './router/router';
 import { RouterProvider } from 'react-router-dom';
@@ -11,9 +11,9 @@ const route = router
 ReactDOM.render(
   <React.StrictMode>
 
-<UserContext>
+
 <RouterProvider router={route} />
-</UserContext>
+
   
    
   </React.StrictMode>,
