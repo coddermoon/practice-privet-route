@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { authContext } from '../contexts/UserContext';
+
+
 
 const Header = () => {
+  const {displayName} = useContext(authContext)
+  
     return (
        <nav>
         <div className="navbar bg-neutral text-neutral-content">
@@ -12,6 +17,7 @@ const Header = () => {
     <Link className="btn btn-ghost normal-case text-xl"  to='/register'>Signup</Link>
     <Link  className="btn btn-ghost normal-case text-xl" to='/login'>Login</Link>
   </div>
+  wellcome {displayName}
 </div>
        </nav>
     );
