@@ -5,14 +5,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import router from './router/router';
 import { RouterProvider } from 'react-router-dom';
+import UserContext from './contexts/UserContext';
 
 
 const route = router
 ReactDOM.render(
   <React.StrictMode>
 
-
+<UserContext>
 <RouterProvider router={route} />
+</UserContext>
+
 
   
    
