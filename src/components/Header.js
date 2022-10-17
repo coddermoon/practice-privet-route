@@ -9,7 +9,7 @@ import { AuthContext } from '../contexts/UserContext';
 const Header = () => {
 
 const {user} = useContext(AuthContext)
-console.log(user)
+
 
   
     return (
