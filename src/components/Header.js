@@ -23,6 +23,7 @@ const handleLogout = ()=>{
   <Link className="btn btn-ghost normal-case text-xl">ASMRoute</Link>
   <div className="nav-links ">
     <Link className="btn btn-ghost normal-case text-xl"  to='/'>Home</Link>
+    <Link className="btn btn-ghost normal-case text-xl"  to='/orders'>Orders</Link>
 
    
     { user?
