@@ -8,7 +8,7 @@ const Home = () => {
     return (
 
         <div>
-           {user?.DisplayName && <h1 className='text-4xl font-bold text-center'>Wellcome,{user.DisplayName}</h1>}
+           {user?.email && <h1 className='text-4xl font-bold text-center'>Wellcome,{user.email}</h1>}
             this is home
         </div>
     );

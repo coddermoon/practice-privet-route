@@ -13,6 +13,7 @@ const Login = () => {
     loginUser(email,password)
     .then(result=>{
       alert('login successfull')
+      form.reset()
     })
     .catch(error=>{
       alert(error.message)

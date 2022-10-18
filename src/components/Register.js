@@ -20,6 +20,7 @@ const Register = () => {
       const user = result.user
       console.log('register user',user)
       alert('successfull')
+      form.reset()
     })
     .catch(error=>{
       console.log(error.message)
